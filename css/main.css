@@ -1,13 +1,3 @@
-:root {
-  --brand-color: #2196F3;
-  --studio-color: #000000;
-  --hero-text: #FFFFFF;
-  --nav-text: #212121;
-  --tel-text: #757575;
-  --focus-color: #2196F3;
-  --adress-color: rgba(255, 255, 255, 0.6);
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -90,15 +80,15 @@ img {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--studio-color);
+  color: #000000;
 }
 
 .web {
-  color: var(--brand-color);
+  color: #2196F3;
 }
 
 .navigator {
-  color: var(--nav-text);
+  color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -112,7 +102,7 @@ img {
 
 .navigator:hover,
 .navigator:focus {
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .telephone {
@@ -125,7 +115,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--tel-text);
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -136,7 +126,7 @@ img {
 
 .telephone:hover,
 .telephone:focus {
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .icon-phone {
@@ -178,7 +168,7 @@ img {
 }
 
 .hero-heading {
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -192,7 +182,7 @@ img {
 
 .white {
   display: inline-block;
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -241,7 +231,7 @@ img {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  background-color: var(--hero-text);
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -273,7 +263,7 @@ img {
 
 .close:hover,
 .close:focus {
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .close-icon {
@@ -297,7 +287,7 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 1.88;
   font-weight: 400;
@@ -336,7 +326,7 @@ img {
 
 .form-field label {
   margin-bottom: 4px;
-  color: var(--tel-text);
+  color: #757575;
   font-size: 12px;
   line-height: 1.17;
   font-weight: 400;
@@ -350,6 +340,7 @@ img {
 
 .input-form {
   outline: none;
+  color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
@@ -361,17 +352,17 @@ img {
 
 .input-form:hover,
 .input-form:focus {
-  border-color: var(--focus-color);
+  border-color: #2196F3;
   cursor: pointer;
 }
 
 .input-form:hover + .icon-form,
 .input-form:focus + .icon-form {
-  fill: var(--focus-color);
+  fill: #2196F3;
 }
 
 .input-form:focus {
-  border: 1px solid var(--focus-color);
+  border: 1px solid #2196F3;
 }
 
 .icon-form {
@@ -401,12 +392,12 @@ img {
 
 .textarea:hover,
 .textarea:focus {
-  border-color: var(--focus-color);
+  border-color: #2196F3;
 }
 
 .field-policy {
   margin-bottom: 30px;
-  color: var(--grey-text);
+  color: #757575;
   font-size: 12px;
   line-height: 1.17;
   font-weight: 400;
@@ -427,10 +418,10 @@ img {
 }
 
 .check-input:checked + .icon-check {
-  background-color: var(--focus-color);
+  background-color: #2196F3;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
-  border-color: var(--focus-color);
+  border-color: #2196F3;
 }
 
 .check-input {
@@ -456,7 +447,7 @@ img {
 
 .sending a {
   text-decoration: underline;
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .button-submit {
@@ -501,7 +492,7 @@ img {
 }
 
 .dignity-title {
-  color: var(--nav-text);
+  color: #212121;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.2;
@@ -547,7 +538,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(47, 48, 58, 0.8);
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -555,7 +546,7 @@ img {
 }
 
 .table {
-  color: var(--nav-text);
+  color: #212121;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
@@ -599,7 +590,7 @@ img {
 }
 
 .name {
-  color: var(--nav-text);
+  color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -634,8 +625,8 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-  color: var(--hero-text);
-  background-color: var(--focus-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
 }
 
 .social-icon {
@@ -658,7 +649,7 @@ img {
 }
 
 .position {
-  color: var(--tel-text);
+  color: #757575;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -720,8 +711,8 @@ img {
 
 .client-link:hover,
 .client-link:focus {
-  color: var(--focus-color);
-  border-color: var(--focus-color);
+  color: #2196F3;
+  border-color: #2196F3;
 }
 
 .client-icon {
@@ -748,7 +739,7 @@ img {
 .brand-down {
   display: inline-block;
   font-family: Raleway;
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -758,7 +749,7 @@ img {
 
 .location {
   display: inline-block;
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -773,12 +764,12 @@ img {
 
 .location:hover,
 .location:focus {
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .navigator-down {
   display: inline-block;
-  color: var(--adress-color);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -788,7 +779,7 @@ img {
 
 .navigator-down:hover,
 .navigator-down:focus {
-  color: var(--focus-color);
+  color: #2196F3;
 }
 
 .social-down {
@@ -845,7 +836,7 @@ img {
 }
 
 .social-link-down {
-  color: var(--hero-text);
+  color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -854,8 +845,8 @@ img {
 
 .social-link-down:hover,
 .social-link-down:focus {
-  color: var(--hero-text);
-  background-color: var(--focus-color);
+  color: #FFFFFF;
+  background-color: #2196F3;
 }
 
 .social-icon-down {
@@ -911,8 +902,8 @@ img {
   line-height: 1.875;
   width: 200px;
   height: 50px;
-  background-color: var(--focus-color);
-  color: var(--hero-text);
+  background-color: #2196F3;
+  color: #FFFFFF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -954,7 +945,7 @@ img {
 
 .input-down-text:hover,
 .input-down-text:focus {
-  border-color: var(--focus-color);
+  border-color: #2196F3;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -984,7 +975,7 @@ img {
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--hero-text);
+  color: #FFFFFF;
 }
 
 .send-icon {
@@ -1020,15 +1011,15 @@ img {
 
 .filter:hover,
 .filter:focus {
-  background-color: var(--focus-color);
-  color: var(--hero-text);
+  background-color: #2196F3;
+  color: #FFFFFF;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter {
   font-family: Roboto;
-  color: var(--nav-text);
+  color: #212121;
   background: #F5F4FA;
   font-weight: 500;
   font-size: 16px;
@@ -1132,7 +1123,7 @@ img {
 }
 
 .port-title {
-  color: var(--nav-text);
+  color: #212121;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -1167,7 +1158,7 @@ img {
 .card-leding {
   margin: 0;
   padding: 63px 24px;
-  color: var(--hero-text);
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -1180,15 +1171,15 @@ img {
 }
 
 .port-text {
-  color: var(--tel-text);
+  color: #757575;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
 .navigator.current {
-  color: var(--focus-color);
-  border-bottom: var(--focus-color);
+  color: #2196F3;
+  border-bottom: #2196F3;
 }
 
 .navigator.current::after {
@@ -1200,6 +1191,6 @@ img {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--focus-color);
+  background-color: #2196F3;
 }
 /*# sourceMappingURL=main.css.map */

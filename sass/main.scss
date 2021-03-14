@@ -281,6 +281,7 @@ line-height: 1.17;
 font-weight: 400;
 letter-spacing: 0.01em;
 }
+
   
 .input-thumb {
 content: "";
@@ -289,6 +290,7 @@ position: relative;
   
 .input-form {
 outline: none;
+color: $tel-text;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding-left: 42px;
@@ -343,7 +345,7 @@ border-color: $focus-color;
   
 .field-policy {
 margin-bottom: 30px;
-color: $grey-text;
+color: $tel-text;
 font-size: 12px;
 line-height: 1.17;
 font-weight: 400;
