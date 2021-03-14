@@ -1,0 +1,98 @@
+.our-teem {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.table-list {
+display: flex;
+justify-content: space-between;
+}
+
+.table-list li {
+background-color: #FFFFFF;
+}
+
+.team {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+
+.table-list li:not(:first-child) {
+margin-left: 30px;
+}
+
+.name,
+.position {
+text-align: center;
+}
+
+.name {
+color: $nav-text;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+.social {
+display: flex;
+width: 206px;
+height: 44px;
+justify-content: center;
+align-items: center;
+margin: 0 32px 30px 32px;
+}
+
+.social-link {
+color: #AFB1B8;
+border-radius: 50%;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+color: $hero-text;
+background-color: $focus-color;
+}
+
+.social-icon {
+fill: currentColor;
+}
+
+.social-icon {
+display: flex;
+width: 20px;
+height: 20px;
+margin: 12px;
+}
+
+.social-contaner {
+display: flex;
+}
+
+.position {
+color: $tel-text;
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+padding-bottom: 16px;
+}
+
+.social li:not(:first-child) {
+margin-left: 10px;
+}
+
+.social-list {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.our-teem {
+background-color: #F5F4FA;
+display: flex;
+}

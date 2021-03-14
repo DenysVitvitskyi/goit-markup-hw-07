@@ -1,0 +1,40 @@
+.working {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+.working-list {
+display: flex;
+justify-content: space-between;
+}
+
+.working-list-tumb {
+position: relative;
+}
+    
+.working-list .overlay {
+position: absolute;
+width: 100%;
+padding: 27px 0;
+bottom: 0;
+left: 0;
+text-align: center;
+align-items: center;
+background-color: rgba(47, 48, 58, 0.8);
+color:  $hero-text;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.17;
+text-transform: uppercase;
+}
+
+
+.table {
+color: $nav-text;
+font-weight: bold;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
