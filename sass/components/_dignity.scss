@@ -1,38 +1,38 @@
 .dignity {
 padding-top: 94px;
+
+    &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    &__icon {
+    padding-bottom: 30px;
+    }
+
+    &__title {
+    color: $nav-text;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    }
+
+    &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    }
 }
 
-.dignity-list {
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-.dignity-list li{
+.dignity__list li{
 width: 270px;
 }
 
-.dignity-list li:not(:first-child) {
+.dignity__list li:not(:first-child) {
 margin-left: 30px;
-}
-
-.degnity-icon {
-padding-bottom: 30px;
-}
-
-.dignity-title {
-color: $nav-text;
-font-weight: bold;
-font-size: 14px;
-line-height: 1.2;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin-bottom: 10px;
-}
-
-.dignity-text {
-font-weight: normal;
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
 }

@@ -1,18 +1,16 @@
 .working {
 padding-top: 94px;
 padding-bottom: 94px;
+    &__list {
+    display: flex;
+    justify-content: space-between;
+        &--tumb {
+        position: relative;
+        }
+    }
 }
 
-.working-list {
-display: flex;
-justify-content: space-between;
-}
-
-.working-list-tumb {
-position: relative;
-}
-    
-.working-list .overlay {
+.working__list .overlay {
 position: absolute;
 width: 100%;
 padding: 27px 0;
@@ -27,7 +25,6 @@ font-size: 14px;
 line-height: 1.17;
 text-transform: uppercase;
 }
-
 
 .table {
 color: $nav-text;
