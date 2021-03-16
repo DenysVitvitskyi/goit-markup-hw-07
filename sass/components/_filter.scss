@@ -1,21 +1,14 @@
 .filter {
+@include margin(94px, null, 50px, null);
 display: flex;
 justify-content: center;
-margin-top: 94px;
-margin-bottom: 50px;
     &__button {
-    border: none;
-    display: inline-block;
-    position: relative;
+    @include button-relative;
+    @include text-description(16px, $nav-text, 500, 1.6, 0.03em);
     cursor: pointer;
     font-family: Roboto;
-    color: $nav-text;
     background: #F5F4FA;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;
     padding: 6px 22px;
     border-radius: 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

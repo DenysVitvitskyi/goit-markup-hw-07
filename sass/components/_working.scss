@@ -1,37 +1,29 @@
 .working {
-padding-top: 94px;
-padding-bottom: 94px;
+@include padding(94px, null, 94px, null);
     &__list {
     display: flex;
     justify-content: space-between;
         &--tumb {
         position: relative;
+        z-index: 1;
         }
     }
 }
 
 .working__list .overlay {
+@include text-description(14px, $hero-text, 700, 1.17, null);
+@include indent(null, null, 0, 0);
+@include align-center;
 position: absolute;
 width: 100%;
 padding: 27px 0;
-bottom: 0;
-left: 0;
-text-align: center;
-align-items: center;
 background-color: rgba(47, 48, 58, 0.8);
-color:  $hero-text;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.17;
 text-transform: uppercase;
+z-index: 1;
 }
 
 .table {
-color: $nav-text;
-font-weight: bold;
-font-size: 36px;
-line-height: 1.2;
+@include text-description(36px, $nav-text, bold, 1.2, 0.03em);
 text-align: center;
-letter-spacing: 0.03em;
 margin-bottom: 50px;
 }

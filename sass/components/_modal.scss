@@ -1,9 +1,7 @@
 .backdrop {
+@include size(100%, 100vh);
+@include indent(0, null, null, 0);
 position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100vh;
 transform: scaleX(1);
 background-color:  rgba(0, 0, 0, 0.2);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -23,27 +21,25 @@ transform: translate(-50%, -50%) scale(0);
 }
 
 .modal {
+@include indent(50%, null, null, 50%);
 position: absolute;
 min-width: 528px;
 min-height: 581px;
-top: 50%;
-left: 50%;
 overflow-y: auto;
 opacity: 1;
 transform: translate(-50%, -50%) scale(1);
 background-color: $hero-text;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-z-index: 1;
+z-index: 2;
 }
 
 .modal__form {
 margin: 40px;
         
     &--title {
+    @include text-description(20px, null, null, 1.15, null);
     margin-bottom: 12px;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     }
 
@@ -56,19 +52,14 @@ margin: 40px;
 
 
 .close {
+@include flex-center;
+@include indent(8px, 8px, null, null);
+@include size(30px, 30px);
+@include border(1px, solid, rgba(0, 0, 0, 0.1), 50%);
 background: none;
 position: absolute;
-display: flex;
-top: 8px;
-right: 8px;
-width: 30px;
-height: 30px;
-border-radius: 50%;
-align-items: center;
-justify-content: center;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
-border: 1px solid rgba(0, 0, 0, 0.1);
     &:hover,
     &:focus {
     color: $focus-color;
@@ -80,17 +71,13 @@ fill: currentColor;
 }
 
 .button__submit--modal {
+@include size(200px, 50px);
+@include text-description(16px, $hero-text, 400, 1.88, null);
 background-color: rgba(33, 150, 243, 1);
 border: none;
 cursor: pointer;
-width: 200px;
-height: 50px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-color: $hero-text;
-font-size: 16px;
-line-height: 1.88;
-font-weight: 400;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 justify-content: center;
 align-items: center;
@@ -102,12 +89,8 @@ align-items: center;
   
 
 .modal__form--field label {
+@include text-description(12px, $tel-text, 400, 1.17, 0.01em);
 margin-bottom: 4px;
-color: $tel-text;
-font-size: 12px;
-line-height: 1.17;
-font-weight: 400;
-letter-spacing: 0.01em;
 }
 
 .input__thumb {
@@ -116,13 +99,11 @@ position: relative;
 }
   
 .input__form {
+@include size(100%, 40px);
+@include border(1px, solid, rgba(33, 33, 33, 0.2), 4px);
 outline: none;
 color: $tel-text;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
 padding-left: 42px;
-height: 40px;
-width: 100%;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -141,29 +122,19 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-  
-  
-  
 .icon__form {
+@include indent(50%, null, null, 15px);
 position: absolute;
-  
-left: 15px;
-top: 50%;
 transform: translateY(-50%);
 }
-  
+
 .textarea {
+@include text-description(12px, rgba(117, 117, 117, 1), 400, 1.17, 0.01em);
+@include border(1px, solid, rgba(33, 33, 33, 0.2), 4px);
 outline: none;
 resize: none;
 padding: 12px 16px;
-border-radius: 4px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-color: rgba(117, 117, 117, 1);
-font-weight: 400;
 height: 120px;
-letter-spacing: 0.01em;
-line-height: 1.17;
-font-size: 12px;
 cursor: pointer;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -175,27 +146,16 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   
 .field__policy {
+@include text-description(12px, $tel-text, 400, 1.17, 0.01em);
 margin-bottom: 30px;
-color: $tel-text;
-font-size: 12px;
-line-height: 1.17;
-font-weight: 400;
-letter-spacing: 0.01em;
 text-align: center;
 }
   
 .check {
-display: flex;
-align-items: center;
-justify-content: center;
+@include flex-center;
 
     &__input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
-    outline: none;
-    cursor: pointer;
+    @include check-input;
 
         &:checked + .icon__check {
         background-color: $focus-color;
@@ -211,11 +171,10 @@ display: none;
 }
   
 .icon__check {
+@include border(2px, solid, #2a2a2a, 2px);
 display: inline-block;
 margin-right: 9px;
-border: 2px solid #2a2a2a;
 cursor: pointer;
-border-radius: 2px;
 }
 
 .sending a {
@@ -224,7 +183,5 @@ color: $focus-color;
 }
 
 .button__submit {
-display: flex;
-justify-content: center;
-align-items: center;
+@include flex-center;
 }

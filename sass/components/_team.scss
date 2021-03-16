@@ -1,6 +1,5 @@
 .our__teem {
-padding-top: 94px;
-padding-bottom: 94px;
+@include padding(94px, null, 94px, null);
 background-color: #F5F4FA;
 display: flex;
 }
@@ -30,26 +29,16 @@ text-align: center;
 }
 
 .name {
-color: $nav-text;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.2;
-letter-spacing: 0.03em;
-padding-top: 30px;
-padding-bottom: 10px;
+@include text-description(16px, $nav-text, 500, 1.2, 0.03em);
+@include padding(30px, null, 10px, null);
 }
 
 .social {
-display: flex;
-width: 206px;
-height: 44px;
-justify-content: center;
-align-items: center;
-margin: 0 32px 30px 32px;
+@include flex-center;
+@include size(206px, 44px);
+@include margin(0, 32px, 30px, 32px);
     &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
         &--link {
         color: #AFB1B8;
         border-radius: 50%;
@@ -57,10 +46,9 @@ margin: 0 32px 30px 32px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         &--icon {
+        @include size(20px, 20px);
         fill: currentColor;
         display: flex;
-        width: 20px;
-        height: 20px;
         margin: 12px;
         }
         &--contaner {
@@ -80,9 +68,6 @@ margin-left: 10px;
 }
 
 .position {
-color: $tel-text;
-font-size: 16px;
-line-height: 1.2;
-letter-spacing: 0.03em;
+@include text-description(16px, $tel-text, null, 1.2, 0.03em);
 padding-bottom: 16px;
 }

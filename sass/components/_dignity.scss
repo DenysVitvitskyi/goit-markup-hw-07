@@ -2,9 +2,7 @@
 padding-top: 94px;
 
     &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-space;
     }
 
     &__icon {
@@ -12,20 +10,13 @@ padding-top: 94px;
     }
 
     &__title {
-    color: $nav-text;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    @include text-description(14px, $nav-text, bold, 1.2, 0.03em);
     text-transform: uppercase;
     margin-bottom: 10px;
     }
 
     &__text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include text-description(14px, null, normal, 1.7, 0.03em);
     }
 }
 
